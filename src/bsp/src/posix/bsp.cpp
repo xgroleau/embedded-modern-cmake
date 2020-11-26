@@ -3,15 +3,16 @@
 #include <FreeRTOS.h>
 #include <FreeRTOSConfig.h>
 
-#include <stdio.h>
+#include <cstdio>
 #include <task.h>
 #include <timers.h>
 
-void blinky(void *ptr) {
-  while (1) {
-    printf("Light blinking\n");
-    vTaskDelay(500);
-  }
+void blinky(void* ptr) {
+    while (true) {
+        const int sleep = 500;
+        printf("Light blinking\n");
+        vTaskDelay(sleep);
+    }
 }
 
 void init_chip() {}

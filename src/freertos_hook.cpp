@@ -12,18 +12,20 @@ void vApplicationTickHook(void) {}
 void vApplicationIdleHook(void) {}
 
 void vApplicationMallocFailedHook(void) {
-  taskDISABLE_INTERRUPTS();
-  while (1)
-    ;
+    taskDISABLE_INTERRUPTS();
+    while (true) {
+    };
 }
 
-void vApplicationStackOverflowHook(TaskHandle_t pxTask, char *pcTaskName) {
-  (void)pcTaskName;
-  (void)pxTask;
+// NOLINTNEXTLINE(readability-non-const-parameter)
+void vApplicationStackOverflowHook(TaskHandle_t pxTask, char* pcTaskName) {
+    // Using variables
+    const void* taskName = pcTaskName;
+    (void)pxTask;
 
-  taskDISABLE_INTERRUPTS();
-  while (1)
-    ;
+    taskDISABLE_INTERRUPTS();
+    while (true) {
+    };
 }
 
 #ifdef __cplusplus

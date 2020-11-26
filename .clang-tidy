@@ -1,0 +1,11 @@
+---
+Checks:          ''
+WarningsAsErrors: 'clang-analyzer-*,modernize-*,bigprone-*,readability-*,portability-*,performance-*,-modernize-use-nullptr,-modernize-use-trailing-return-type'
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle:     'file'
+User:            xavier
+CheckOptions:
+  - key:             modernize-loop-convert.MinConfidence
+    value:           reasonable
+...
