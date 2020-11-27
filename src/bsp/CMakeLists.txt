@@ -1,5 +1,5 @@
-set(LIB_NAME "swarmus-hivemind-bsp")
-set(LIB_ALIAS "SwarmUS::HiveMind::BSP")
+set(LIB_NAME "common-bsp")
+set(LIB_ALIAS "Common::BSP")
 
 get_filename_component(BSP_CMAKE_DIR ${CMAKE_CURRENT_LIST_FILE} DIRECTORY)
 
@@ -22,7 +22,7 @@ target_include_directories(${LIB_NAME}
 
 target_link_libraries(${LIB_NAME}
     PUBLIC
-        SwarmUS::HiveMind::BSP::Platform
+        Common::BSP::Platform
 )
 
 

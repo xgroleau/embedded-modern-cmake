@@ -1,5 +1,5 @@
-set(LIB_NAME "swarmus-hivemind-bsp-stm32")
-set(LIB_ALIAS "SwarmUS::HiveMind::BSP::Platform")
+set(LIB_NAME "common-bsp-stm32")
+set(LIB_ALIAS "Common::BSP::Platform")
 
 set(LIB_SOURCES
     bsp.cpp
@@ -36,7 +36,7 @@ target_include_directories(${LIB_NAME}
 target_link_libraries(${LIB_NAME}
 PUBLIC
         # Defined libraries
-        SwarmUS::HiveMind::FreeRTOS
+        Common::FreeRTOS
 
         # Need to be public for the linker script
         CMSIS::STM32::F429ZI

@@ -14,7 +14,7 @@ option(DISABLE_EXTERNAL_WARNINGS "Disables warnings from exernal libs (gtest, fr
 set(COMPILE_STM32_F429ZI 0)
 
 # Define project
-project(hive-mind CXX C ASM)
+project(embedded-modern-cmake CXX C ASM)
 set(CMAKE_INCLUDE_CURRENT_DIR TRUE)
 
 # Warning flags constants

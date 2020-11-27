@@ -1,5 +1,5 @@
-set(LIB_NAME "swarmus-hivemind-freertos-posix")
-set(LIB_ALIAS "SwarmUS::HiveMind::FreeRTOS::Platform")
+set(LIB_NAME "common-freertos-posix")
+set(LIB_ALIAS "Common::FreeRTOS::Platform")
 
 
 

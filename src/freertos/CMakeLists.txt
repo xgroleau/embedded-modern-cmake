@@ -1,5 +1,5 @@
 set(LIB_NAME "freertos")
-set(LIB_ALIAS "SwarmUS::HiveMind::FreeRTOS")
+set(LIB_ALIAS "Common::FreeRTOS")
 
 include(freertos/common)
 
@@ -35,6 +35,6 @@ target_link_libraries(${LIB_NAME}
     PUBLIC
         FreeRTOS::Timers
         FreeRTOS::Heap::1
-        SwarmUS::HiveMind::FreeRTOS::Platform
+        Common::FreeRTOS::Platform
 )
 

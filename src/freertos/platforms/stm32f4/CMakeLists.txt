@@ -1,5 +1,5 @@
-set(LIB_NAME "swarmus-hivemind-freertos-stm32")
-set(LIB_ALIAS "SwarmUS::HiveMind::FreeRTOS::Platform")
+set(LIB_NAME "common-freertos-stm32")
+set(LIB_ALIAS "Common::FreeRTOS::Platform")
 
 add_library(${LIB_NAME} ${LIB_SOURCES} ${LIB_HEADERS} INTERFACE)
 add_library(${LIB_ALIAS} ALIAS ${LIB_NAME})
