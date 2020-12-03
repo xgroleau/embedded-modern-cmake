@@ -9,7 +9,7 @@ If you have clang-tidy installed, the build will use it for static analysis.
 Check the cmake options for more information.
 
 ### Host
-Note that host compilation is supported, so you can run and test your application natively on your compulter. Just need to mock the bsp.
+Note that host compilation is supported, so you can run and test your application natively on your computer. Just need to mock the bsp.
 
 ```
 mkdir build
@@ -61,6 +61,9 @@ OpenOCD has a gdb server that defaults to port 3333, you can then connect to it 
 ```
 openocd -f ./tools/openocd/stm32_f4/stm32_f4.cfg -c init -c \"reset init\"
 ```
+
+### Doxygen
+Doxygen documentation is generated on build if doxygen is found on path. A target `make doc` is available to only build the documentation
 
 ### CI
 
